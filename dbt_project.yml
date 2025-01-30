@@ -61,3 +61,6 @@ models:
       schema: mart
       materialized: table
 
+vars:
+  order_status_accepted_values_list : ['created', 'shipped', 'approved', 'canceled', 'invoiced', 'delivered', 'processing', 'unavailable']
+

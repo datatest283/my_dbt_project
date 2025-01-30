@@ -31,7 +31,7 @@ models:
         tests:
           - accepted_values:
               name: accepted_values_order_status
-              values: ['created', 'shipped', 'approved', 'canceled', 'invoiced', 'delivered', 'processing', 'unavailable']
+              values: var('order_status_accepted_values_list')
       - name: user_id
         description: "Foreign key linking the order to the user who placed it."
         tests:
